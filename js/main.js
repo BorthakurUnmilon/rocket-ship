@@ -1,4 +1,4 @@
-gsap.registerPlugin(MotionPathPlugin);
+
 gsap.to("#rect", {
     motionPath: {
         path: "#path",
