@@ -11,10 +11,13 @@ body{
     background-color: rgb(207, 45, 94);
 }
 
+#path {
+  visibility: hidden;
+}
 
 path {
     stroke-width: 2;
-    stroke: gray;
+    stroke: white;
   }
   
 circle {

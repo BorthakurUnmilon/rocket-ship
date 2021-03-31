@@ -1,4 +1,10 @@
 
+const pathProp = document.getElementById('path');
+const dis = pathProp.getAttribute("d")
+console.log(`SVG Path properties: ${dis}`);
+
+
+
 gsap.to("#rect", {
     motionPath: {
         path: "#path",
@@ -7,6 +13,6 @@ gsap.to("#rect", {
         autoRotate: true
     },
     transformOrigin: "50% 50%",
-    duration: 5,
-    ease: "power1.inOut"
+    duration: 1.5,
+    ease: "power1.inOut",
 })
