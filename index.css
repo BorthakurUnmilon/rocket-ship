@@ -11,15 +11,38 @@ body{
     background-color: rgb(207, 45, 94);
 }
 
-#path {
-  visibility: hidden;
+.container{
+  margin: auto;
+  border: 2px solid white;
+  /* padding: 50%; */
+  height: 50vh;
+  width: 80%;
 }
 
+#path {
+  /* visibility: hidden; */
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 4.9s linear forwards;
+  margin: auto;
+}
+
+
+#canvas{
+  border: 2px solid white;
+}
+
+#tail{
+  margin: 100px;
+}
 path {
-    stroke-width: 2;
-    stroke: white;
+    stroke-width: 10;
+    stroke: rgba(255, 255, 255,0.1);;
   }
-  
-circle {
-    fill: white;
+
+
+  @keyframes dash{
+    to{
+      stroke-dashoffset: 0;
+    }
   }
